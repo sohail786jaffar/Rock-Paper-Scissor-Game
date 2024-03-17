@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #98c1d9;
+}
+.heading{
+    background-color: #293241;
+    color: #e0fbfc;
+    line-height: 2;
+}
+.wrapper{
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    padding: 0rem 0 3rem 0;
+}
+.choice,
+.computerChoice {
+  width: 20%;
+  height: 20%;
+  background-color: red;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: 2px solid #293241;
+  outline: 2px solid #293241;
+  outline-offset: 0.25rem;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+.computerChoiceShow{
+    width: fit-content;
+    padding: 10px 30px;
+    background-color: #EE6C4D;
+    font-size: 1.2rem;
+    color: #e0fbfc;
+    margin: auto;
+    border-radius: 10px;
+}
+.animation {
+  animation: slideUpChoice 0.7s ease forwards,
+  slideDownChoice 0.7s ease 3s forwards;
+}
+@keyframes slideUpChoice {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, -50%);
+  }
+}
+@keyframes slideDownChoice {
+    
+    0%{
+        transform: translate(0, -50%);
+    }
+    100%{
+        transform: translate(0, 0%);
+    }
+}
+.Choices {
+  width: 100%;
+  max-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 3rem 0;
+}
+.scoreboard{
+    padding: 0rem 0 10px 0;
+    font-size: 1.3rem;
+    border: 2px solid #3D5A80;
+    width: fit-content;
+    margin: auto;
+}
+
+.winCount {
+  width: fit-content;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  text-align: center;
+  border-top: 2px solid #3D5A80;
+}
+.container-1,
+.container-2{
+    border: 2px solid #3D5A80;
+   
+}
+
+.you,
+.computer {
+  background-color: #ee6c4d;
+  color: #e0fbfc;
+  padding: 10px 30px;
+  margin-top: 20px;
+}
+#winner {
+  width: fit-content;
+  padding: 10px 30px;
+  background-color: #ee6c4d;
+  color: #e0fbfc;
+  margin: auto;
+  margin-top: 3rem;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1 class="heading">let's play rock paper scissor</h1>
+      <!-- computer choice -->
+      <div class="Choices">
+        <div class="computerChoice" id="Crock">
+          <img src="images/rock.jpg" alt="" />
+        </div>
+        <div class="computerChoice" id="Cpaper">
+          <img src="images/paper.jpg" alt="" />
+        </div>
+        <div class="computerChoice" id="Cscissors">
+          <img src="images/scissors.jpg" alt="" />
+        </div>
+      </div>
+
+      <p class="computerChoiceShow">Computer choice</p>
+      <p id="winner">winner</p>
+
+      <!-- user choice -->
+
+      <div class="Choices">
+        <div class="choice choiseRock" id="rock">
+          <img src="images/rock.jpg" alt="" />
+        </div>
+        <div class="choice choicePaper" id="paper">
+          <img src="images/paper.jpg" alt="" />
+        </div>
+        <div class="choice choisePaper" id="scissors">
+          <img src="images/scissors.jpg" alt="" />
+        </div>
+      </div>
+      <div class="scoreboard">
+        <p class="heading">Score Board</p>
+        <div class="winCount">
+          <div class="container-1 scoreContainer">
+            <p id="personWinCount">0</p>
+            <p class="you">You</p>
+          </div>
+          <div class="container-2 scoreContainer">
+            <p id="computerWinCount">0</p>
+            <p class="computer">Computer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
