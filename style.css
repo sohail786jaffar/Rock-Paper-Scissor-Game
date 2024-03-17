@@ -65,7 +65,29 @@ img {
         transform: translate(0, 0%);
     }
 }
-.Choices {
+.animation2 {
+  animation: slideDownChoice 0.7s ease 3s forwards,
+  slideUpChoice 0.7s ease forwards;
+}
+@keyframes slideUpChoiceComp {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, 50%);
+  }
+}
+@keyframes slideDownChoiceComp {
+    
+    0%{
+        transform: translate(0, 50%);
+    }
+    100%{
+        transform: translate(0, 0%);
+    }
+}
+.userChoices,
+.computerChoices {
   width: 100%;
   max-height: 100%;
   display: flex;
@@ -115,4 +137,12 @@ img {
   border-radius: 10px;
   font-size: 1.2rem;
   font-family: Georgia, "Times New Roman", Times, serif;
+}
+.footer{
+  background-color: #293241;
+  color: #e0fbfc;
+  line-height: 4;
+  text-align: center;
+  max-width:900px ;
+  margin: auto;
 }

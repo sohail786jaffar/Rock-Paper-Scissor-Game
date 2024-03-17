@@ -22,12 +22,12 @@ userChoice.forEach((box)=>{
     
 })
 
-computerChoiceAni.forEach((box) => {
-    box.addEventListener("click", () => {
-        const compChoice = box.getAttribute("id");
-        box.classList.add("animation");
-        box.addEventListener("animationend", () => {
-            box.classList.remove("animation");
+computerChoiceAni.forEach((choice) => {
+    choice.addEventListener("click", () => {
+        const compChoice = choice.getAttribute("id");
+        choice.classList.add("animation2");
+        choice.addEventListener("animationend", () => {
+            choice.classList.remove("animation2");
         });
         
     });
